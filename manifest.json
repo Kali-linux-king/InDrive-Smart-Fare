@@ -1,0 +1,67 @@
+{
+  "id": "/",
+  "name": "InDrive Smart Fare & Expense Manager",
+  "short_name": "InDrive Smart",
+  "description": "Smart fare estimator, expense tracker and reports for InDrive bike riders.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["finance", "productivity", "business"],
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Fare Estimator",
+      "short_name": "Estimate",
+      "url": "/?tab=estimator",
+      "description": "Check if a ride is worth accepting"
+    },
+    {
+      "name": "Log a Ride",
+      "short_name": "Log Ride",
+      "url": "/?tab=shift",
+      "description": "Log a completed ride"
+    },
+    {
+      "name": "Today's Report",
+      "short_name": "Report",
+      "url": "/?tab=reports",
+      "description": "View today's earnings report"
+    }
+  ]
+}
