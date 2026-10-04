@@ -1,12 +1,20 @@
 /* InDrive Smart — Service Worker
    Strategy: cache-first shell, network fallback, offline fallback to index.html */
 
-const CACHE_NAME = 'indrive-smart-v3';
+const CACHE_NAME = 'indrive-smart-v4';
+
+/* Files pre-cached on install. Keep this list small — everything else
+   gets cached lazily the first time it's fetched. */
 const SHELL = [
   './',
   './index.html',
   './manifest.json',
-  './icon.svg'
+  './images/favicon.ico',
+  './images/favicon-16x16.png',
+  './images/favicon-32x32.png',
+  './images/apple-touch-icon.png',
+  './images/android-chrome-192x192.png',
+  './images/android-chrome-512x512.png'
 ];
 
 /* Install: pre-cache the app shell */
